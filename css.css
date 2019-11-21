@@ -1,0 +1,2685 @@
+/*********************************************************************************************************
+                        CSS CENTRAL DA PÁGINA
+
+NOME: SITE SOBRE A HISTÓRIA DOS AUTOMOVÉIS
+AUTOR: YAN ABREU SANTOS
+
+***********************************************************************************************************/
+
+
+/*corpo da página: cor do fundo, tamanho da fonte, cor das letras*/
+/*personalização do menu, margen, distância interna, cor do fundo, borda com canto arredondado*/
+
+
+
+body {
+    background-color: rgb(197, 228, 248);
+    color: black;    
+}
+
+div { 
+    box-sizing: border-box;
+}
+/*fundo preto do menu*/
+ul {
+    overflow: hidden;
+    background-color:rgb(0, 0, 0);
+    margin-bottom: 2vh;
+    font-size: 4.3vh;
+    height: 12vh;    
+}
+
+/*25px pixls / 16 = resultem como transformar pixels em porcentagem*/
+/*personalização
+ das referências do menu, flutura a esquerda, bloco em linha, borda direita sólida preta, alinhamento no centro*/
+ li {
+     margin-left: 40vh;
+     margin-right: 35vh;
+     text-indent: 5px;
+     
+}
+li a{
+    float: left;
+    display: inline;
+    border-right: solid black;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*definição que permite ao passar o mouse ficar a cor preta, pois o hiperlink não está ativado*/
+li a:hover:not(.active) {
+    background-color: #111;
+    text-decoration: none;
+}
+/*definição de hiperlink ativo na cor verde*/
+.active {
+    background-color: rgb(10, 233, 17);
+    text-decoration: none;
+}
+/*hiperlink, bloco, distância interna, cor do fundo, cor da letra*/
+a {
+    display: block;
+    width: 30vh;
+    height: 12vh;
+    padding: 10px;
+    background-color: rgb(6, 6, 180);
+    color: white;
+    text-decoration: none;
+}
+/*proriedades da tag a*/
+a:link {
+    text-decoration: none;
+} 
+/*personalização da parte principal: fonte do texto, alinhamento, margen, distância interna*/
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    text-align: justify;
+    margin: 0 44vh 0 44vh;
+    padding: 0 0.625rem 0 0.625rem;
+}
+/*personailazação dos parágrafos: altura da linha, recuo da primeira linha, margem.*/
+p {
+    line-height: 1.5;
+    text-indent: 1.25rem;
+    margin: 0.625em 0.625em 0.625em 0.625em; 
+}
+/*cor da forma, altura da linha, recuo da primeira linha, 
+tamanho da fonte, alinhamento do texto, borda redonda*/
+.titulos {
+    background-color:rgb(2, 39, 204);
+    color: white;
+    line-height: 2;
+    text-indent: 1.5625em;
+    font-size: 1.5625rem;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+figure {    
+    background-color: rgb(10, 233, 17);
+    border: 0.125em solid #ccc;
+    border-radius: 10px;
+    padding: 0.9375rem ;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/*rodapé no centro, fonte, cor da forma, espaço interno*/
+footer {
+    background-color: rgb(2, 39, 204);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+#imagem-fundo-motor-a-vapor {
+    float: left;
+    margin-left: 2vh;
+    width: 35vh;
+    height: 40vh;
+}
+/*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+#foto-da-motor {
+    float: left;
+    width: 35vh;
+    height: 38vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#imagem-fundo-motor-combustão {
+    float: right;
+    margin-right: 2vh;
+    width: 35vh;
+    height: 40vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#foto-motor-combustão {
+    float: right;
+    width: 35vh;
+    height: 38vh;
+}
+
+#imagem-fundo-ferdinand {
+    float: left;
+    margin-left: 2vh;
+    width: 35vh;
+    height: 45vh;
+}
+/*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+#foto-ferdinand {
+    float: left;
+    width: 35vh;
+    height: 25vh;
+}
+
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#imagem-fundo-karl-benz{
+    float: right;
+    margin-right: 2vh;
+    width: 35vh;
+    height: 45vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura, margim de baixo*/
+#foto-benz {
+    float: right;
+    width: 35vh;
+    height: 30vh;
+}
+/*imagem flutuar a esquerda, largura, altura*/
+#imagem-fundo-benz-patent {
+    float: left;
+    margin-left: 2vh;
+    width: 35vh;
+    height: 45vh;
+}
+/*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+#foto-patent {
+    float: left;
+    width: 35vh;
+    height: 40vh;
+}
+
+#video {
+    width: 200vh;
+    height: 100vh;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+iframe {
+    margin-top: 5vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    width: 150vh;
+    height: 80vh;
+    border-radius: 5vh; 
+}
+
+/*negrito*/
+strong {
+    color: rgb(31, 20, 20);
+}
+
+/*rodape aba evolução*/
+#rodape {
+    background-color: rgb(2, 39, 204);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 238vh;
+}
+/*******************************************************************
+**********************Css linha de produção*************************
+*******************************************************************/
+
+#imagem-fundo-Ransom {
+    float: left;
+     width: 35vh;
+     height: 50vh;
+     margin-left: 2vh; 
+}
+#imagem-Ransom {
+    float: left;
+    width: 35vh;
+    height: 28vh;
+}
+
+#imagem-fundo-Henri {
+    float: right;
+    width: 35vh;
+    height: 50vh;
+    margin-right: 2vh;
+}
+#imagem-Henri {
+    float: right;
+    width: 35vh;
+    height: 30vh;
+}
+
+#imagem-fundo-linha {
+    float: right;
+    width: 35vh;
+    height: 45vh;
+    margin-right: 2vh;
+    margin-top: 20vh;
+}
+#imagem-linha{
+    float: right;
+    width: 35vh;
+    height: 38vh;
+}
+
+#imagem-fundo-fusca {
+    float: left;
+    width: 35vh;
+    height: 30vh;
+    margin-left: 2vh;
+}
+#imagem-fusca {
+    float: left;
+    width: 35vh;
+    height: 25vh;
+}
+/*utilizar medidas sem ser pixels*/
+/******************************************************************
+/*******************css da aba evolução 1 imagem*******************
+*******************************************************************/
+
+#imagem-fundo1904 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-left: 7vh; /*alterar par mover as 3 imagens*/
+    margin-right: 3vh;
+}
+#imagem1904 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*2 imagem*/
+#imagem-fundo1911 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    margin-left: 0;
+}
+#imagem1911 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*3 imagem*/
+#imagem-fundo1927 { 
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-left: 0;
+}
+#imagem1927 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*4 imagem*/
+#imagem-fundo1932 {
+    float: right;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 6vh;
+}
+#imagem1932 {
+    float: right;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*5 imagem*/
+#imagem-fundo1939 {
+    float: right;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+}
+#imagem1939 {
+    float: right;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*6 imagem*/
+#imagem-fundo1942 {
+    float: right;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+}
+#imagem1942 {
+    float: right;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*7 imagem*/
+#imagem-fundo1955 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    margin-left: 7vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1955 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*8 imagem*/
+#imagem-fundo1960 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    margin-left: 0; /*alterar par mover as 3 imagens*/
+}
+#imagem1960 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*9 imagem*/
+#imagem-fundo1964 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-left: 0; /*alterar par mover as 3 imagens*/
+}
+#imagem1964 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*10 imagem*/
+#imagem-fundo1969 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    margin-left: 7vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1969 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+/*11 imagem */
+#imagem-fundo1992 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+    margin-right: 3vh;
+    margin-left: 0;
+}
+#imagem1992 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+/*12 imagem*/
+#imagem-fundo1998 {
+    float: left;
+    width: 60vh;
+    height: 50vh;
+    margin-top: 3vh;
+}
+#imagem1998 {
+    float: left;
+    width: 60vh;
+    height: 45vh;
+}
+
+#titulos {
+    background-color:rgb(2, 39, 204);
+    color: white;
+    line-height: 1;
+    text-indent: 1.5625em;
+    font-size: 1.5625rem;
+    text-align: center;
+    border-radius: 0.5em;
+}
+/********************************************************************
+    CSS PORTUGAL E BRASIL
+********************************************************************8*/
+#fundo-Panhard {
+    float: left;
+    width: 35vh;
+    height: 45vh;
+    margin-left: 2vh;
+}
+
+#foto-Panhard {
+    float: left;
+    width: 35vh;
+    height: 22vh;
+}
+
+#fundo-Isetta {
+    float: right;
+    margin-right: 2vh;
+    width: 35vh;
+    height: 35vh;
+}
+
+#imagem-Isetta {
+    float: right;
+    width: 35vh;
+    height: 25vh;
+}
+
+
+/**************************************************************************************
+                                            IPAD
+******************************************************************************************/
+@media (max-width: 768px  ){
+/*fundo preto do menu*/
+ul {
+    margin-bottom: 2vh;
+    font-size: 2vh;
+    height: 8.vh;
+    width: 75vh;
+}
+
+/*25px pixls / 16 = resultem como transformar pixels em porcentagem*/
+/*personalização
+ das referências do menu, flutura a esquerda, bloco em linha, borda direita sólida preta, alinhamento no centro*/
+ li {
+     margin-left: 0px;
+     margin-right: 0px;
+     text-indent: 5px;
+}
+
+a {
+    width: 20vh;
+    height: 10vh;
+    padding: 10px;
+}
+
+/*personalização da parte principal: fonte do texto, alinhamento, margen, distância interna*/
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    text-align: justify;
+    margin: 0 0vh 0 0vh;
+    padding: 0 0.625rem 0 0.625rem;
+}
+/*personailazação dos parágrafos: altura da linha, recuo da primeira linha, margem.*/
+p {
+    line-height: 1.5;
+    text-indent: 1.25rem;
+    margin: 0.625em 0.625em 0.625em 0.625em; 
+}
+/*cor da forma, altura da linha, recuo da primeira linha, 
+tamanho da fonte, alinhamento do texto, borda redonda*/
+.titulos {
+    line-height: 1;
+    text-indent: 0;
+    font-size: 3.5vh;
+    padding: 0.5vh;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+figure {    
+    background-color: rgb(10, 233, 17);
+    border: 0.125em solid #ccc;
+    border-radius: 10px;
+    padding: 0.9375rem ;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+/*rodapé no centro, fonte, cor da forma, espaço interno*/
+footer {
+    background-color: rgb(2, 39, 204);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+#imagem-fundo-motor-a-vapor {
+    float: left;
+    margin-left: 2vh;
+    width: 20vh;
+    height: 20vh;
+    margin-top: 1vh;
+}
+/*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+#foto-da-motor {
+    float: left;
+    width: 15vh;
+    height: 14vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#imagem-fundo-motor-combustão {
+    float: right;
+    margin-right: 2vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    width: 15vh;
+    height: 22vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#foto-motor-combustão {
+    float: right;
+    width: 17vh;
+    height: 18vh;
+}
+
+#imagem-fundo-ferdinand {
+    margin-top: 1vh;
+    float: left;
+    margin-left: 3vh;
+    width: 40vh;
+    height: 30vh;
+}
+/*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+#foto-ferdinand {
+    float: left;
+    width: 40vh;
+    height: 19vh
+}
+
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#imagem-fundo-karl-benz{
+    float: right;
+    margin-top: 1vh;
+    margin-right: 2vh;
+    width: 18vh;
+    height: 34vh;
+    margin-left: 1vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura, margim de baixo*/
+#foto-benz {
+    float: right;
+    width: 18vh;
+    height: 15vh;
+}
+/*imagem flutuar a esquerda, largura, altura*/
+#imagem-fundo-benz-patent {
+    margin-top: 1vh;
+    float: left;
+    margin-left: 2vh;
+    width: 18vh;
+    height: 25vh;
+}
+/*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+#foto-patent {
+    float: left;
+    width: 18vh;
+    height: 20vh;
+}
+
+#video {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+iframe {
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 45vh;
+    height: 45vh;
+    border-radius: 5vh; 
+}
+
+/*negrito*/
+strong {
+    color: rgb(31, 20, 20);
+}
+
+/*rodape aba evolução*/
+#rodape {
+    background-color: rgb(2, 39, 204);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 563vh;
+}
+/*******************************************************************
+**********************Css linha de produção*************************
+*******************************************************************/
+
+#imagem-fundo-Ransom {
+    float: left;
+     width: 35vh;
+     height: 45vh;
+     margin-left: 5.5vh;
+     margin-top: 1vh; 
+}
+#imagem-Ransom {
+    float: left;
+    width: 35vh;
+    height: 33vh;
+}
+
+#imagem-fundo-Henri {
+    float: right;
+    width: 35vh;
+    height: 45vh;
+    margin-right: 5.5vh;
+    margin-top: 1vh;
+}
+#imagem-Henri {
+    float: right;
+    width: 35vh;
+    height: 33vh;
+}
+
+#imagem-fundo-linha {
+    float: right;
+    width: 35vh;
+    height: 35vh;
+    margin-right: 5vh;
+    margin-top: 0vh;
+}
+#imagem-linha{
+    float: right;
+    width: 35vh;
+    height: 32vh;
+}
+
+#imagem-fundo-fusca {
+    float: left;
+    width: 40vh;
+    height: 30vh;
+    margin-left: 2vh;
+}
+#imagem-fusca {
+    float: left;
+    width: 40vh;
+    height: 25vh;
+}
+/*utilizar medidas sem ser pixels*/
+/******************************************************************
+/*******************css da aba evolução 1 imagem*******************
+*******************************************************************/
+
+#imagem-fundo1904 {
+    float: left;
+    width: 42vh;
+    height:40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; 
+}
+#imagem1904 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*2 imagem*/
+#imagem-fundo1911 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1911 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*3 imagem*/
+#imagem-fundo1927 { 
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1927 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*4 imagem*/
+#imagem-fundo1932 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1932 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*5 imagem*/
+#imagem-fundo1939 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1939 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*6 imagem*/
+#imagem-fundo1942 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1942 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*7 imagem*/
+#imagem-fundo1955 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1955 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*8 imagem*/
+#imagem-fundo1960 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1960 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*9 imagem*/
+#imagem-fundo1964 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1964 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*10 imagem*/
+#imagem-fundo1969 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1969 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+/*11 imagem */
+#imagem-fundo1992 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1992 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+/*12 imagem*/
+#imagem-fundo1998 {
+    float: left;
+    width: 42vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1998 {
+    float: left;
+    width: 42vh;
+    height: 35vh;
+}
+
+#titulos {
+    background-color:rgb(2, 39, 204);
+    color: white;
+    line-height: 1;
+    text-indent: 1.5625em;
+    font-size: 1.5625rem;
+    text-align: center;
+    border-radius: 0.5em;
+}
+/********************************************************************
+    CSS PORTUGAL E BRASIL
+********************************************************************8*/
+#fundo-Panhard {
+    float: left;
+    width: 40vh;
+    height: 33vh;
+    margin-left: 3vh;
+    margin-top: 1vh;
+}
+
+#foto-Panhard {
+    float: left;
+    width: 40vh;
+    height: 22vh;
+}
+
+#fundo-Isetta {
+    float: right;
+    margin-right: 6vh;
+    width: 35vh;
+    height: 30vh;
+    margin-top: 1vh;
+}
+
+#imagem-Isetta {
+    float: right;
+    width: 35vh;
+    height: 25vh;
+}
+      
+}
+
+
+
+/****************************************************************************
+IPHONE 6/7/8 PLUS
+***************************************************************************/
+
+@media (max-width: 414px  ){
+
+    /*fundo preto do menu*/
+    ul {
+        margin-bottom: 2vh;
+        font-size: 4.3vh;
+        height: 30vh;
+    }
+    
+    /*25px pixls / 16 = resultem como transformar pixels em porcentagem*/
+    /*personalização
+     das referências do menu, flutura a esquerda, bloco em linha, borda direita sólida preta, alinhamento no centro*/
+     li {
+         margin-left: 0px;
+         margin-right: 0px;
+         text-indent: 5px;
+    }
+    
+    a {
+        width: 54vh;
+        height: 5vh;
+        padding: 10px;
+    }
+    
+    /*personalização da parte principal: fonte do texto, alinhamento, margen, distância interna*/
+    main {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+        text-align: justify;
+        margin: 0 0vh 0 0vh;
+        padding: 0 0.625rem 0 0.625rem;
+    }
+    /*personailazação dos parágrafos: altura da linha, recuo da primeira linha, margem.*/
+    p {
+        line-height: 1.5;
+        text-indent: 1.25rem;
+        margin: 0.625em 0.625em 0.625em 0.625em; 
+    }
+    /*cor da forma, altura da linha, recuo da primeira linha, 
+    tamanho da fonte, alinhamento do texto, borda redonda*/
+    .titulos {
+        line-height: 1;
+        text-indent: 0;
+        font-size: 3.5vh;
+        padding: 0.5vh;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+    
+    figure {    
+        background-color: rgb(10, 233, 17);
+        border: 0.125em solid #ccc;
+        border-radius: 10px;
+        padding: 0.9375rem ;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    
+    }
+    
+    /*rodapé no centro, fonte, cor da forma, espaço interno*/
+    footer {
+        background-color: rgb(2, 39, 204);
+        padding: 0.2em;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    /*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+    #imagem-fundo-motor-a-vapor {
+        float: left;
+        margin-left: 2vh;
+        width: 20vh;
+        height: 20vh;
+        margin-top: 1vh;
+    }
+    /*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+    #foto-da-motor {
+        float: left;
+        width: 15vh;
+        height: 14vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #imagem-fundo-motor-combustão {
+        float: right;
+        margin-right: 2vh;
+        margin-left: 1vh;
+        margin-top: 1vh;
+        width: 15vh;
+        height: 22vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #foto-motor-combustão {
+        float: right;
+        width: 17vh;
+        height: 18vh;
+    }
+    
+    #imagem-fundo-ferdinand {
+        margin-top: 1vh;
+        float: left;
+        margin-left: 3vh;
+        width: 40vh;
+        height: 30vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+    #foto-ferdinand {
+        float: left;
+        width: 40vh;
+        height: 19vh
+    }
+    
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #imagem-fundo-karl-benz{
+        float: right;
+        margin-top: 1vh;
+        margin-right: 2vh;
+        width: 18vh;
+        height: 34vh;
+        margin-left: 1vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura, margim de baixo*/
+    #foto-benz {
+        float: right;
+        width: 18vh;
+        height: 15vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura*/
+    #imagem-fundo-benz-patent {
+        margin-top: 1vh;
+        float: left;
+        margin-left: 2vh;
+        width: 18vh;
+        height: 25vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+    #foto-patent {
+        float: left;
+        width: 18vh;
+        height: 20vh;
+    }
+    
+    #video {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 5vh;
+        text-align: center;
+    }
+    
+    iframe {
+        margin-top: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        width: 45vh;
+        height: 45vh;
+        border-radius: 5vh; 
+    }
+    
+    /*negrito*/
+    strong {
+        color: rgb(31, 20, 20);
+    }
+    
+    /*rodape aba evolução*/
+    #rodape {
+        background-color: rgb(2, 39, 204);
+        padding: 0.2em;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 563vh;
+    }
+    /*******************************************************************
+    **********************Css linha de produção*************************
+    *******************************************************************/
+    
+    #imagem-fundo-Ransom {
+        float: left;
+         width: 35vh;
+         height: 45vh;
+         margin-left: 5.5vh;
+         margin-top: 1vh; 
+    }
+    #imagem-Ransom {
+        float: left;
+        width: 35vh;
+        height: 33vh;
+    }
+    
+    #imagem-fundo-Henri {
+        float: right;
+        width: 35vh;
+        height: 45vh;
+        margin-right: 5.5vh;
+        margin-top: 1vh;
+    }
+    #imagem-Henri {
+        float: right;
+        width: 35vh;
+        height: 33vh;
+    }
+    
+    #imagem-fundo-linha {
+        float: right;
+        width: 35vh;
+        height: 35vh;
+        margin-right: 5vh;
+        margin-top: 0vh;
+    }
+    #imagem-linha{
+        float: right;
+        width: 35vh;
+        height: 32vh;
+    }
+    
+    #imagem-fundo-fusca {
+        float: left;
+        width: 40vh;
+        height: 30vh;
+        margin-left: 2vh;
+    }
+    #imagem-fusca {
+        float: left;
+        width: 40vh;
+        height: 25vh;
+    }
+    /*utilizar medidas sem ser pixels*/
+    /******************************************************************
+    /*******************css da aba evolução 1 imagem*******************
+    *******************************************************************/
+    
+    #imagem-fundo1904 {
+        float: left;
+        width: 42vh;
+        height:40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; 
+    }
+    #imagem1904 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*2 imagem*/
+    #imagem-fundo1911 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1911 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*3 imagem*/
+    #imagem-fundo1927 { 
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1927 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*4 imagem*/
+    #imagem-fundo1932 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1932 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*5 imagem*/
+    #imagem-fundo1939 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1939 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*6 imagem*/
+    #imagem-fundo1942 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1942 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*7 imagem*/
+    #imagem-fundo1955 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1955 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*8 imagem*/
+    #imagem-fundo1960 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1960 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*9 imagem*/
+    #imagem-fundo1964 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1964 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*10 imagem*/
+    #imagem-fundo1969 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1969 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*11 imagem */
+    #imagem-fundo1992 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1992 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    /*12 imagem*/
+    #imagem-fundo1998 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1998 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    #titulos {
+        background-color:rgb(2, 39, 204);
+        color: white;
+        line-height: 1;
+        text-indent: 1.5625em;
+        font-size: 1.5625rem;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+    /********************************************************************
+        CSS PORTUGAL E BRASIL
+    ********************************************************************8*/
+    #fundo-Panhard {
+        float: left;
+        width: 40vh;
+        height: 33vh;
+        margin-left: 3vh;
+        margin-top: 1vh;
+    }
+    
+    #foto-Panhard {
+        float: left;
+        width: 40vh;
+        height: 22vh;
+    }
+    
+    #fundo-Isetta {
+        float: right;
+        margin-right: 6vh;
+        width: 35vh;
+        height: 30vh;
+        margin-top: 1vh;
+    }
+    
+    #imagem-Isetta {
+        float: right;
+        width: 35vh;
+        height: 25vh;
+    }
+          
+    }
+
+
+/*******************************************************************************************
+RESOLUÇÃO IPHONE 5/SE
+*******************************************************************************************/
+
+@media (max-width: 375px  ){
+
+    /*fundo preto do menu*/
+    ul {
+        margin-bottom: 2vh;
+        font-size: 4.3vh;
+        height: 30vh;
+    }
+    
+    /*25px pixls / 16 = resultem como transformar pixels em porcentagem*/
+    /*personalização
+     das referências do menu, flutura a esquerda, bloco em linha, borda direita sólida preta, alinhamento no centro*/
+     li {
+         margin-left: 0px;
+         margin-right: 0px;
+         text-indent: 5px;
+    }
+    
+    a {
+        width: 54vh;
+        height: 5vh;
+        padding: 10px;
+    }
+    
+    /*personalização da parte principal: fonte do texto, alinhamento, margen, distância interna*/
+    main {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+        text-align: justify;
+        margin: 0 0vh 0 0vh;
+        padding: 0 0.625rem 0 0.625rem;
+    }
+    /*personailazação dos parágrafos: altura da linha, recuo da primeira linha, margem.*/
+    p {
+        line-height: 1.5;
+        text-indent: 1.25rem;
+        margin: 0.625em 0.625em 0.625em 0.625em; 
+    }
+    /*cor da forma, altura da linha, recuo da primeira linha, 
+    tamanho da fonte, alinhamento do texto, borda redonda*/
+    .titulos {
+        line-height: 1;
+        text-indent: 0;
+        font-size: 3.5vh;
+        padding: 0.5vh;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+    
+    figure {    
+        background-color: rgb(10, 233, 17);
+        border: 0.125em solid #ccc;
+        border-radius: 10px;
+        padding: 0.9375rem ;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    
+    }
+    
+    /*rodapé no centro, fonte, cor da forma, espaço interno*/
+    footer {
+        background-color: rgb(2, 39, 204);
+        padding: 0.2em;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    /*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+    #imagem-fundo-motor-a-vapor {
+        float: left;
+        margin-left: 2vh;
+        width: 20vh;
+        height: 20vh;
+        margin-top: 1vh;
+    }
+    /*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+    #foto-da-motor {
+        float: left;
+        width: 15vh;
+        height: 14vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #imagem-fundo-motor-combustão {
+        float: right;
+        margin-right: 2vh;
+        margin-left: 1vh;
+        margin-top: 1vh;
+        width: 15vh;
+        height: 22vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #foto-motor-combustão {
+        float: right;
+        width: 17vh;
+        height: 18vh;
+    }
+    
+    #imagem-fundo-ferdinand {
+        margin-top: 1vh;
+        float: left;
+        margin-left: 3vh;
+        width: 40vh;
+        height: 30vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+    #foto-ferdinand {
+        float: left;
+        width: 40vh;
+        height: 19vh
+    }
+    
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #imagem-fundo-karl-benz{
+        float: right;
+        margin-top: 1vh;
+        margin-right: 2vh;
+        width: 18vh;
+        height: 34vh;
+        margin-left: 1vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura, margim de baixo*/
+    #foto-benz {
+        float: right;
+        width: 18vh;
+        height: 15vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura*/
+    #imagem-fundo-benz-patent {
+        margin-top: 1vh;
+        float: left;
+        margin-left: 2vh;
+        width: 18vh;
+        height: 25vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+    #foto-patent {
+        float: left;
+        width: 18vh;
+        height: 20vh;
+    }
+    
+    #video {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 5vh;
+        text-align: center;
+    }
+    
+    iframe {
+        margin-top: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        width: 45vh;
+        height: 45vh;
+        border-radius: 5vh; 
+    }
+    
+    /*negrito*/
+    strong {
+        color: rgb(31, 20, 20);
+    }
+    
+    /*rodape aba evolução*/
+    #rodape {
+        background-color: rgb(2, 39, 204);
+        padding: 0.2em;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 563vh;
+    }
+    /*******************************************************************
+    **********************Css linha de produção*************************
+    *******************************************************************/
+    
+    #imagem-fundo-Ransom {
+        float: left;
+         width: 35vh;
+         height: 45vh;
+         margin-left: 5.5vh;
+         margin-top: 1vh; 
+    }
+    #imagem-Ransom {
+        float: left;
+        width: 35vh;
+        height: 33vh;
+    }
+    
+    #imagem-fundo-Henri {
+        float: right;
+        width: 35vh;
+        height: 45vh;
+        margin-right: 5.5vh;
+        margin-top: 1vh;
+    }
+    #imagem-Henri {
+        float: right;
+        width: 35vh;
+        height: 33vh;
+    }
+    
+    #imagem-fundo-linha {
+        float: right;
+        width: 35vh;
+        height: 35vh;
+        margin-right: 5vh;
+        margin-top: 0vh;
+    }
+    #imagem-linha{
+        float: right;
+        width: 35vh;
+        height: 32vh;
+    }
+    
+    #imagem-fundo-fusca {
+        float: left;
+        width: 40vh;
+        height: 30vh;
+        margin-left: 2vh;
+    }
+    #imagem-fusca {
+        float: left;
+        width: 40vh;
+        height: 25vh;
+    }
+    /*utilizar medidas sem ser pixels*/
+    /******************************************************************
+    /*******************css da aba evolução 1 imagem*******************
+    *******************************************************************/
+    
+    #imagem-fundo1904 {
+        float: left;
+        width: 42vh;
+        height:40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; 
+    }
+    #imagem1904 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*2 imagem*/
+    #imagem-fundo1911 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1911 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*3 imagem*/
+    #imagem-fundo1927 { 
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1927 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*4 imagem*/
+    #imagem-fundo1932 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1932 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*5 imagem*/
+    #imagem-fundo1939 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1939 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*6 imagem*/
+    #imagem-fundo1942 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1942 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*7 imagem*/
+    #imagem-fundo1955 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1955 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*8 imagem*/
+    #imagem-fundo1960 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1960 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*9 imagem*/
+    #imagem-fundo1964 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1964 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*10 imagem*/
+    #imagem-fundo1969 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1969 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*11 imagem */
+    #imagem-fundo1992 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1992 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    /*12 imagem*/
+    #imagem-fundo1998 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1998 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    #titulos {
+        background-color:rgb(2, 39, 204);
+        color: white;
+        line-height: 1;
+        text-indent: 1.5625em;
+        font-size: 1.5625rem;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+    /********************************************************************
+        CSS PORTUGAL E BRASIL
+    ********************************************************************8*/
+    #fundo-Panhard {
+        float: left;
+        width: 40vh;
+        height: 33vh;
+        margin-left: 3vh;
+        margin-top: 1vh;
+    }
+    
+    #foto-Panhard {
+        float: left;
+        width: 40vh;
+        height: 22vh;
+    }
+    
+    #fundo-Isetta {
+        float: right;
+        margin-right: 6vh;
+        width: 35vh;
+        height: 30vh;
+        margin-top: 1vh;
+    }
+    
+    #imagem-Isetta {
+        float: right;
+        width: 35vh;
+        height: 25vh;
+    }
+          
+    }
+
+/*******************************************************************************************
+RESOLUÇÃO PIXEL 2XL
+*******************************************************************************************/
+
+@media (max-width: 411px  ){
+
+    /*fundo preto do menu*/
+    ul {
+        margin-bottom: 2vh;
+        font-size: 4.3vh;
+        height: 29vh;
+    }
+    
+    /*25px pixls / 16 = resultem como transformar pixels em porcentagem*/
+    /*personalização
+     das referências do menu, flutura a esquerda, bloco em linha, borda direita sólida preta, alinhamento no centro*/
+     li {
+         margin-left: 0px;
+         margin-right: 0px;
+         text-indent: 5px;
+    }
+    
+    a {
+        width: 54vh;
+        height: 5vh;
+        padding: 10px;
+    }
+    
+    /*personalização da parte principal: fonte do texto, alinhamento, margen, distância interna*/
+    main {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+        text-align: justify;
+        margin: 0 0vh 0 0vh;
+        padding: 0 0.625rem 0 0.625rem;
+    }
+    /*personailazação dos parágrafos: altura da linha, recuo da primeira linha, margem.*/
+    p {
+        line-height: 1.5;
+        text-indent: 1.25rem;
+        margin: 0.625em 0.625em 0.625em 0.625em; 
+    }
+    /*cor da forma, altura da linha, recuo da primeira linha, 
+    tamanho da fonte, alinhamento do texto, borda redonda*/
+    .titulos {
+        line-height: 1;
+        text-indent: 0;
+        font-size: 3.5vh;
+        padding: 0.5vh;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+    
+    figure {    
+        background-color: rgb(10, 233, 17);
+        border: 0.125em solid #ccc;
+        border-radius: 10px;
+        padding: 0.9375rem ;
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    
+    }
+    
+    /*rodapé no centro, fonte, cor da forma, espaço interno*/
+    footer {
+        background-color: rgb(2, 39, 204);
+        padding: 0.2em;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    /*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+    #imagem-fundo-motor-a-vapor {
+        float: left;
+        margin-left: 2vh;
+        width: 17vh;
+        height: 15vh;
+        margin-top: 1vh;
+    }
+    /*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+    #foto-da-motor {
+        float: left;
+        width: 17vh;
+        height: 14vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #imagem-fundo-motor-combustão {
+        float: right;
+        margin-right: 2vh;
+        margin-left: 1vh;
+        margin-top: 1vh;
+        width: 17vh;
+        height: 22vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #foto-motor-combustão {
+        float: right;
+        width: 17vh;
+        height: 18vh;
+    }
+    
+    #imagem-fundo-ferdinand {
+        margin-top: 1vh;
+        float: left;
+        margin-left: 3vh;
+        width: 40vh;
+        height: 30vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+    #foto-ferdinand {
+        float: left;
+        width: 40vh;
+        height: 19vh
+    }
+    
+    /*imagem flutuar a direita, margem a direita, largura, altura*/
+    #imagem-fundo-karl-benz{
+        float: right;
+        margin-top: 1vh;
+        margin-right: 2vh;
+        width: 18vh;
+        height: 34vh;
+        margin-left: 1vh;
+    }
+    /*imagem flutuar a direita, margem a direita, largura, altura, margim de baixo*/
+    #foto-benz {
+        float: right;
+        width: 18vh;
+        height: 15vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura*/
+    #imagem-fundo-benz-patent {
+        margin-top: 1vh;
+        float: left;
+        margin-left: 2vh;
+        width: 18vh;
+        height: 25vh;
+    }
+    /*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+    #foto-patent {
+        float: left;
+        width: 18vh;
+        height: 20vh;
+    }
+    
+    #video {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 5vh;
+        text-align: center;
+    }
+    
+    iframe {
+        margin-top: 2vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+        width: 45vh;
+        height: 45vh;
+        border-radius: 5vh; 
+    }
+    
+    /*negrito*/
+    strong {
+        color: rgb(31, 20, 20);
+    }
+    
+    /*rodape aba evolução*/
+    #rodape {
+        background-color: rgb(2, 39, 204);
+        padding: 0.2em;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 563vh;
+    }
+    /*******************************************************************
+    **********************Css linha de produção*************************
+    *******************************************************************/
+    
+    #imagem-fundo-Ransom {
+        float: left;
+         width: 35vh;
+         height: 45vh;
+         margin-left: 5.5vh;
+         margin-top: 1vh; 
+    }
+    #imagem-Ransom {
+        float: left;
+        width: 35vh;
+        height: 33vh;
+    }
+    
+    #imagem-fundo-Henri {
+        float: right;
+        width: 35vh;
+        height: 45vh;
+        margin-right: 5.5vh;
+        margin-top: 1vh;
+    }
+    #imagem-Henri {
+        float: right;
+        width: 35vh;
+        height: 33vh;
+    }
+    
+    #imagem-fundo-linha {
+        float: right;
+        width: 35vh;
+        height: 35vh;
+        margin-right: 5vh;
+        margin-top: 0vh;
+    }
+    #imagem-linha{
+        float: right;
+        width: 35vh;
+        height: 32vh;
+    }
+    
+    #imagem-fundo-fusca {
+        float: left;
+        width: 40vh;
+        height: 30vh;
+        margin-left: 2vh;
+    }
+    #imagem-fusca {
+        float: left;
+        width: 40vh;
+        height: 25vh;
+    }
+    /*utilizar medidas sem ser pixels*/
+    /******************************************************************
+    /*******************css da aba evolução 1 imagem*******************
+    *******************************************************************/
+    
+    #imagem-fundo1904 {
+        float: left;
+        width: 42vh;
+        height:40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; 
+    }
+    #imagem1904 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*2 imagem*/
+    #imagem-fundo1911 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1911 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*3 imagem*/
+    #imagem-fundo1927 { 
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1927 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*4 imagem*/
+    #imagem-fundo1932 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1932 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*5 imagem*/
+    #imagem-fundo1939 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1939 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*6 imagem*/
+    #imagem-fundo1942 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1942 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*7 imagem*/
+    #imagem-fundo1955 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1955 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*8 imagem*/
+    #imagem-fundo1960 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1960 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*9 imagem*/
+    #imagem-fundo1964 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1964 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*10 imagem*/
+    #imagem-fundo1969 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh; /*alterar par mover as 3 imagens*/
+    }
+    #imagem1969 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    /*11 imagem */
+    #imagem-fundo1992 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1992 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    /*12 imagem*/
+    #imagem-fundo1998 {
+        float: left;
+        width: 42vh;
+        height: 40vh;
+        margin-top: 2vh;
+        margin-left: 2vh;
+    }
+    #imagem1998 {
+        float: left;
+        width: 42vh;
+        height: 35vh;
+    }
+    
+    #titulos {
+        background-color:rgb(2, 39, 204);
+        color: white;
+        line-height: 1;
+        text-indent: 1.5625em;
+        font-size: 1.5625rem;
+        text-align: center;
+        border-radius: 0.5em;
+    }
+    /********************************************************************
+        CSS PORTUGAL E BRASIL
+    ********************************************************************8*/
+    #fundo-Panhard {
+        float: left;
+        width: 40vh;
+        height: 33vh;
+        margin-left: 3vh;
+        margin-top: 1vh;
+    }
+    
+    #foto-Panhard {
+        float: left;
+        width: 40vh;
+        height: 22vh;
+    }
+    
+    #fundo-Isetta {
+        float: right;
+        margin-right: 6vh;
+        width: 35vh;
+        height: 30vh;
+        margin-top: 1vh;
+    }
+    
+    #imagem-Isetta {
+        float: right;
+        width: 35vh;
+        height: 25vh;
+    }
+          
+    }
+
+/*************************************************************************************************
+RESOLUÇÃO GALAXY S5
+**************************************************************************************************/
+
+@media (max-width: 360px  ){
+
+/*fundo preto do menu*/
+ul {
+    margin-bottom: 2vh;
+    font-size: 4.3vh;
+    height: 30vh;
+}
+
+/*25px pixls / 16 = resultem como transformar pixels em porcentagem*/
+/*personalização
+ das referências do menu, flutura a esquerda, bloco em linha, borda direita sólida preta, alinhamento no centro*/
+ li {
+     margin-left: 0px;
+     margin-right: 0px;
+     text-indent: 5px;
+
+}
+
+a {
+    width: 53.2vh;
+    height: 4.5vh;
+    padding: 10px;
+}
+
+/*personalização da parte principal: fonte do texto, alinhamento, margen, distância interna*/
+main {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    text-align: justify;
+    margin: 0 0vh 0 0vh;
+    padding: 0 0.625rem 0 0.625rem;
+}
+/*personailazação dos parágrafos: altura da linha, recuo da primeira linha, margem.*/
+p {
+    line-height: 1.5;
+    text-indent: 1.25rem;
+    margin: 0.625em 0.625em 0.625em 0.625em; 
+}
+/*cor da forma, altura da linha, recuo da primeira linha, 
+tamanho da fonte, alinhamento do texto, borda redonda*/
+.titulos {
+    line-height: 1;
+    text-indent: 0;
+    font-size: 3.5vh;
+    padding: 0.5vh;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+figure {    
+    background-color: rgb(10, 233, 17);
+    border: 0.125em solid #ccc;
+    border-radius: 10px;
+    padding: 0.9375rem ;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+/*rodapé no centro, fonte, cor da forma, espaço interno*/
+footer {
+    background-color: rgb(2, 39, 204);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+#imagem-fundo-motor-a-vapor {
+    float: left;
+    margin-left: 2vh;
+    width: 20vh;
+    height: 15vh;
+    margin-top: 1vh;
+}
+/*imagem flutuar a esquerda, margem a esquerda, largura, altura*/
+#foto-da-motor {
+    float: left;
+    width: 20vh;
+    height: 14vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#imagem-fundo-motor-combustão {
+        float: right;
+    margin-right: 2vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+    width: 20vh;
+    height: 25vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#foto-motor-combustão {
+    float: right;
+    width: 20vh;
+    height: 18vh;
+}
+
+#imagem-fundo-ferdinand {
+    margin-top: 1vh;
+    float: left;
+    margin-left: 8vh;
+    width: 35vh;
+    height: 35vh;
+}
+/*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+#foto-ferdinand {
+    float: left;
+    width: 35vh;
+    height: 17vh
+}
+
+/*imagem flutuar a direita, margem a direita, largura, altura*/
+#imagem-fundo-karl-benz{
+    float: right;
+    margin-top: 1vh;
+    margin-right: 2vh;
+    width: 20vh;
+    height: 42vh;
+    margin-left: 1vh;
+}
+/*imagem flutuar a direita, margem a direita, largura, altura, margim de baixo*/
+#foto-benz {
+    float: right;
+    width: 20vh;
+    height: 15vh;
+}
+/*imagem flutuar a esquerda, largura, altura*/
+#imagem-fundo-benz-patent {
+    margin-top: 1vh;
+    float: left;
+    margin-left: 2vh;
+    width: 20vh;
+    height: 30vh;
+}
+/*imagem flutuar a esquerda, largura, altura, margem abaixo*/
+#foto-patent {
+    float: left;
+    width: 20vh;
+    height: 25vh;
+}
+
+#video {
+    width: 50vh;
+    height: 50vh;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+iframe {
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 52vh;
+    height: 45vh;
+    border-radius: 5vh; 
+}
+
+/*negrito*/
+strong {
+    color: rgb(31, 20, 20);
+}
+
+/*rodape aba evolução*/
+#rodape {
+    background-color: rgb(2, 39, 204);
+    padding: 0.2em;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 572vh;
+}
+/*******************************************************************
+**********************Css linha de produção*************************
+*******************************************************************/
+
+#imagem-fundo-Ransom {
+    float: left;
+     width: 35vh;
+     height: 48vh;
+     margin-left: 8vh;
+     margin-top: 1vh; 
+}
+#imagem-Ransom {
+    float: left;
+    width: 35vh;
+    height: 28vh;
+}
+
+#imagem-fundo-Henri {
+    float: right;
+    width: 35vh;
+    height: 48vh;
+    margin-right: 8vh;
+    margin-top: 1vh;
+}
+#imagem-Henri {
+    float: right;
+    width: 35vh;
+    height: 30vh;
+}
+
+#imagem-fundo-linha {
+    float: right;
+    width: 35vh;
+    height: 40vh;
+    margin-right: 8vh;
+    margin-top: 0vh;
+}
+#imagem-linha{
+    float: right;
+    width: 35vh;
+    height: 32vh;
+}
+
+#imagem-fundo-fusca {
+    float: left;
+    width: 35vh;
+    height: 30vh;
+    margin-left: 8vh;
+}
+#imagem-fusca {
+    float: left;
+    width: 35vh;
+    height: 25vh;
+}
+/*utilizar medidas sem ser pixels*/
+/******************************************************************
+/*******************css da aba evolução 1 imagem*******************
+*******************************************************************/
+
+#imagem-fundo1904 {
+    float: left;
+    width: 47vh;
+    height:40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; 
+}
+#imagem1904 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*2 imagem*/
+#imagem-fundo1911 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1911 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*3 imagem*/
+#imagem-fundo1927 { 
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1927 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*4 imagem*/
+#imagem-fundo1932 {
+    float: right;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+#imagem1932 {
+    float: right;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*5 imagem*/
+#imagem-fundo1939 {
+    float: right;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+#imagem1939 {
+    float: right;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*6 imagem*/
+#imagem-fundo1942 {
+    float: right;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-right: 2vh;
+}
+#imagem1942 {
+    float: right;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*7 imagem*/
+#imagem-fundo1955 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1955 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*8 imagem*/
+#imagem-fundo1960 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1960 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*9 imagem*/
+#imagem-fundo1964 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1964 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*10 imagem*/
+#imagem-fundo1969 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh; /*alterar par mover as 3 imagens*/
+}
+#imagem1969 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+/*11 imagem */
+#imagem-fundo1992 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1992 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+/*12 imagem*/
+#imagem-fundo1998 {
+    float: left;
+    width: 47vh;
+    height: 40vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+#imagem1998 {
+    float: left;
+    width: 47vh;
+    height: 35vh;
+}
+
+#titulos {
+    background-color:rgb(2, 39, 204);
+    color: white;
+    line-height: 1;
+    text-indent: 1.5625em;
+    font-size: 1.5625rem;
+    text-align: center;
+    border-radius: 0.5em;
+}
+/********************************************************************
+    CSS PORTUGAL E BRASIL
+********************************************************************8*/
+#fundo-Panhard {
+    float: left;
+    width: 35vh;
+    height: 45vh;
+    margin-left: 8vh;
+    margin-top: 1vh;
+}
+
+#foto-Panhard {
+    float: left;
+    width: 35vh;
+    height: 22vh;
+}
+
+#fundo-Isetta {
+    float: right;
+    margin-right: 8vh;
+    width: 35vh;
+    height: 35vh;
+    margin-top: 1vh;
+}
+
+#imagem-Isetta {
+    float: right;
+    width: 35vh;
+    height: 25vh;
+}
+      
+}
